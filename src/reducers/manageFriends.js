@@ -11,7 +11,7 @@ case 'REMOVE_FRIEND':
         ...state,
         friends: [...state.friends.slice(0, removeIndex), ...state.friends.slice(removeIndex + 1)]
       };
-      
+
   //   default:
   //     return state;
   // }
