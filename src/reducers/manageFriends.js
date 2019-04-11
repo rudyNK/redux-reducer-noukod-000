@@ -4,7 +4,7 @@ export function manageFriends(state, action){
       return {...state,
         friends: [...state.friends, {name: action.friend.name, hometown: action.friend.hometown, id: action.friend.id}]
       };
-      
+
 case 'REMOVE_FRIEND':
       const removeIndex = state.friends.findIndex(friend => friend.id === action.id);
       return {
